@@ -12,7 +12,18 @@ $("#submitIOT").click(function(event) {
 	var cauhoi1 = $("#cauhoi1").val();
 	var cauhoi2 = $("#cauhoi2").val();
 	var sdt = $("#sdt").val();
-    var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&cauhoi=" +cauhoi + "&cauhoi1=" +cauhoi1 + "&cauhoi2=" +cauhoi2 + "&sdt=" + sdt + "&action=register";
+	var tour = "";
+	if ($("#co").prop('checked')) {
+		tour = "Có";
+	}
+	if ($("#khong").prop('checked')) {
+		tour="Không";
+	}
+	if (tour == "") {
+		alert("Vui lòng chọn có hoặc không");
+		return;
+	}
+    var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&cauhoi=" +cauhoi + "&cauhoi1=" +cauhoi1 + "&cauhoi2=" +cauhoi2 + "&sdt=" + sdt + "&tour"+ tour + "&action=register";
 	console.log(url);
     if (masv == '' || lop == '' )
         return alert("Vui lòng điền thông tin Tên và Mã số sinh viên");
