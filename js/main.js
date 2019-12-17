@@ -9,6 +9,8 @@ $("#submitIOT").click(function(event) {
     var email = $.trim($("#email").val()).replace(/ /g,'');
     var hovaten = $("#hovaten").val();
     var cauhoi = $("#cauhoi").val();
+	var cauhoi1 = $("#cauhoi1").val();
+	var cauhoi2 = $("#cauhoi2").val();
 	var sdt = $("#sdt").val();
     var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&cauhoi=" +cauhoi + "&cauhoi1=" +cauhoi1 + "&cauhoi2=" +cauhoi2 + "&sdt=" + sdt + "&action=register";
 	console.log(url);
