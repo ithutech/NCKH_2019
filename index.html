@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	 <link rel="shortcut icon" href="./images/1.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon" />
 
 </head>
 
@@ -21,15 +22,16 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <div class="card-inside" style="padding:0 30px">
-                    <br />
-                    <h2 class="title">ĐĂNG KÍ THAM GIA NGHIÊN CỨU KHOA HỌC<br> <strong>NĂM HỌC 2019 - 2020</strong></h2>
+                        <br />
+                        <h2 class="title">ĐĂNG KÍ THAM GIA NGHIÊN CỨU KHOA HỌC<br> <strong>NĂM HỌC 2019 - 2020</strong></h2>
                         <div class="input-group">
                             <input id="hovaten" class="input--style-2" type="text" placeholder="Họ và tên" name="hovaten">
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input id="masv" class="input--style-2" type="text" placeholder="Mã Sinh Viên" name="masv" oninvalid="this.setCustomValidity('Nhập mã sinh viên')" oninput="setCustomValidity('')">
+                                    <input id="masv" class="input--style-2" type="text" placeholder="Mã Sinh Viên" name="masv" oninvalid="this.setCustomValidity('Nhập mã sinh viên')"
+                                        oninput="setCustomValidity('')">
                                 </div>
                             </div>
                             <div class="col-2">
@@ -38,63 +40,58 @@
                                 </div>
                             </div>
                         </div>
-						
-                          
+
+
                         <div class="input-group">
                             <input id="email" class="input--style-2" type="email" placeholder="Email" name="email">
                         </div>
-						<div class="input-group">
-						
-							<input type="text" name="DIENTHOAI" id="sdt" placeholder="Số điện thoại?" class="input--style-2" required="" oninvalid="this.setCustomValidity('Nhập số điện thoại')" oninput="setCustomValidity('')">
-						</div>
-						<div class="input-group">
+                        <div class="input-group">
 
-                            <textarea id="cauhoi" class="input--style-2" placeholder="Bạn đã có ý tưởng chưa? Nếu có thì là gì?" style="border:none;width:100%" ></textarea>
+                            <input type="text" name="DIENTHOAI" id="sdt" placeholder="Số điện thoại?" class="input--style-2" required="" oninvalid="this.setCustomValidity('Nhập số điện thoại')"
+                                oninput="setCustomValidity('')">
                         </div>
                         <div class="input-group">
 
-                            <textarea id="cauhoi1" class="input--style-2" placeholder="Chuyên ngành hoặc hướng nghiên cứu của bạn là gì?" style="border:none;width:100%" ></textarea>
+                            <textarea id="cauhoi" class="input--style-2" placeholder="Bạn đã có ý tưởng chưa? Nếu có thì là gì?" style="border:none;width:100%"></textarea>
                         </div>
-						<div class="input-group">
+                        <div class="input-group">
 
-                            <textarea id="cauhoi2" class="input--style-2" placeholder="Bạn đã có GVHD chưa? Nếu có thì cho biết họ tên" style="border:none;width:100%" ></textarea>
+                            <textarea id="cauhoi1" class="input--style-2" placeholder="Chuyên ngành hoặc hướng nghiên cứu của bạn là gì?" style="border:none;width:100%"></textarea>
                         </div>
-			    <div class="fix-font">Vào lúc 12g00 ngày 27/12/2019, Khoa tổ chức buổi họp mặt tư vấn NCKH - bạn tham gia được không?(*)</div>
-							<div class="col-md-12 fix-join-tour">
-<tr>
-<td>
-<input class="fix-checkbox" type="checkbox" id="co" name="co" />
-</td>
-<td>
-<span class="fix-font f-s-14">Có - em nhất định sẽ tham gia</span>
-</td>
-</tr>
-</div>
-<div class="col-md-12 fix-join-tour">
-<tr>
-<td>
-<input class="fix-checkbox" type="checkbox" id="khong" name="khong" />
-</td>
-<td>
-<span class="fix-font f-s-14">Không - em có lịch bận rồi</span>
-</td>
-</tr>
-</div>
+                        <div class="input-group">
+
+                            <textarea id="cauhoi2" class="input--style-2" placeholder="Bạn đã có GVHD chưa? Nếu có thì cho biết họ tên" style="border:none;width:100%"></textarea>
+                        </div>
+                        <div class="fix-font">Vào lúc 12g00 ngày 27/12/2019, Khoa tổ chức buổi họp mặt tư vấn NCKH - bạn tham gia được không?(*)</div>
+                        <div class="col-md-12 fix-join-tour">
+
+                            <input style="width: 50px;vertical-align: middle;" class="fix-checkbox" type="checkbox" id="co" name="co" />
+
+                            <span style="vertical-align: middle;" class="fix-font f-s-14">Có - em nhất định sẽ tham gia</span>
+
+                        </div>
+                        <div class="col-md-12 fix-join-tour">
+
+                            <input style="width: 50px;vertical-align: middle" class="fix-checkbox" type="checkbox" id="khong" name="khong" />
+
+                            <span style="vertical-align: middle" class="fix-font f-s-14">Không - em có lịch bận rồi</span>
+
+                        </div>
                         <div class="p-t-30">
                             <button id="submitIOT" class="btn btn--radius btn--green">ĐĂNG KÍ</button>
                         </div>
 
-                    <div id="box-loader" class="is-loading is-hidden">
-                        <div id="loader">
-                            <div id="shadow"></div>
-                            <div id="box"></div>
+                        <div id="box-loader" class="is-loading is-hidden">
+                            <div id="loader">
+                                <div id="shadow"></div>
+                                <div id="box"></div>
+                            </div>
+                        </div>
+                        <div id="result" class="is-result is-hidden">
+                            <div id="text_result">
+                            </div>
                         </div>
                     </div>
-                    <div id="result" class="is-result is-hidden">
-                        <div id="text_result">
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
